@@ -1,2 +1,17 @@
 # Sambalpuri_Sieve_SLM_Evaluation
 Probing Dialectal Drift and Cultural Grounding in Small Language Models: A Case Study on Standard Odia vs. Sambalpuri language. 
+# Dialectal Robustness Evaluation
+
+## Project Objective
+This project evaluates the performance of Small Language Models (SLMs) like Microsoft Phi-3.5 on Sambalpuri, a low-resource dialect of Odia. The goal is to quantify "Standard Language Drift" and assess cultural grounding.
+
+## Methodology
+- **Anchor Language:** English
+- **Gold Standard:** Expert-annotated (Standard Odia via PhD Linguistics Researcher; Sambalpuri via Native Speaker).
+- **Target Models:** Microsoft Phi-3.5-mini, Gemini 1.5 Flash.
+
+## Status
+- [x] Project Setup
+- [ ] Data Collection (In Progress: 0/100 sentences)
+- [ ] Model Inference
+- [ ] Error Analysis & Visualization
