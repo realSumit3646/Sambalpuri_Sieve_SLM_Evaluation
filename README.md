@@ -43,22 +43,22 @@ Complete conversation can be found in Results/phi4_mini_hallucination_log.txt
 ### 📊 Fidelity Score Distribution
 The model shows a high concentration in the middle range (Scores 2-3), indicating a consistent struggle with dialectal precision.
 
-![Fidelity Score Distribution](./plots/Distribution of Dialectal Fidelity Scores.png)
+![Fidelity Score Distribution](./plots/Distribution_of_Dialectal_Fidelity_Scores.png)
 
 ### 🔍 Lexical Differentiation: The Standard Language Bias
 My analysis quantifies "Dialectal Leakage." The orange curve shows that the AI-generated Sambalpuri output is statistically more similar to Standard Odia than to the Sambalpuri Native one (blue curve). This shows that parent language still overpowers the dialect in the output.
 
-![Lexical Differentiation KDE Plot](./plots/Lexical Differentiation.png)
+![Lexical Differentiation KDE Plot](./plots/Lexical_Differentiation.png)
 
 ### 📉 Performance by Linguistic Category
 While the model performs better on Morphological tasks (basic suffix swaps), it fails significantly in Syntactic and Cultural grounding. Many outputs just showed loss of context or crude word to word translation removing the "flavour".
 
-![Fidelity Score by Category](./plots/Fidelity Score by Category.png)
+![Fidelity Score by Category](./plots/Fidelity_Score_by_Category.png)
 
 ### 🌡️ Error Type Heatmap
 This heatmap illustrates how Lexical(LEX) and Morphological(MORPH) errors cluster across different conversational categories. More explained about it in report.
 
-![Heatmap of Error Types](./plots/Heatmap of Error Types across Categories.png)
+![Heatmap of Error Types](./plots/Heatmap_of_Error_Types_across_Categories.png)
 
 
 For more detailes analysis, read a comprehensive report explained with plots in the Results folder (Report.pdf).
