@@ -7,11 +7,11 @@ This project evaluates the performance of Small Language Models (SLMs) like Micr
 
 ## Methodology
 - **Anchor Language:** English
-- **Gold Standard:** Expert-annotated (Standard Odia via PhD Linguistics Researcher; Sambalpuri via Native Speaker).
+- **Gold Standard:** Expert-annotated (Standard Odia via Odia Lecturer and NET(JRF) qualifier; Sambalpuri via Native Speaker).
 - **Target Models:** Microsoft Phi-3.5-mini, Gemini 1.5 Flash.
 
-## Status
+## Current Status
 - [x] Project Setup
-- [ ] Data Collection (In Progress: 0/100 sentences)
-- [ ] Model Inference
+- [x] Data Collection (100/100 sentences annotated with linguistic features)
+- [ ] Model Inference (In Progress: Running Phi-3.5 and Gemini)
 - [ ] Error Analysis & Visualization
