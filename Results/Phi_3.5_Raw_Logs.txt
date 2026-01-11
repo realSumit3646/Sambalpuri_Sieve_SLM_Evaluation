@@ -1,0 +1,32 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\stude> ollama run phi3.5
+pulling manifest
+pulling b5374915da53: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏ 2.2 GB
+pulling c608dc615584: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏  149 B
+pulling c5f9f560a704: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏ 1.1 KB
+pulling 45ac4c662a77: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏   60 B
+pulling 0611867ea67b: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏  409 B
+verifying sha256 digest
+writing manifest
+success
+>>> hello
+Hello! How can I help you today?
+
+>>> translate it to Odia language "How are you?"
+আসারুন, প্রতিবয় কেনো রাষ্ণ ? (Asar una prati Bow kene o raashno)
+
+Please note that translations can vary slightly depending on the regional dialect and colloquialisms. The provided translation is a standard form in
+Standard Odia, which should be widely understood among speakers of this language.
+
+>>> do you know Odia language?
+I am Phi, an AI developed by Microsoft, so I don'thy directly understand languages the way humans do. However, I have been trained on a diverse range
+of internet text, which includes many examples in different languages including Odia (Bengali-Assamese). This allows me to process and generate text
+based on what I learned. If you provide some context or specific queries related to Odia language, culture, literature etc., feel free to ask!
+
+
+
+>>> S
