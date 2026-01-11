@@ -16,8 +16,8 @@ This project evaluates the performance of Small Language Models (SLMs) like Micr
 ## Current Status
 - [x] Project Setup
 - [x] Data Collection (100/100 sentences annotated with linguistic features)
-- [ ] Model Inference (In Progress: Running Phi-3.5, Phi 4 and Gemini)
-- [ ] Error Analysis & Visualization
+- [x] Model Inference (In Progress: Running Phi-3.5, Phi 4 and Gemini)
+- [x] Error Analysis & Visualization
 
 ## Critical Findings
 ### 🚨 Script Contamination in Phi-3.5
@@ -32,3 +32,36 @@ While evaluating **Microsoft Phi 4-mini**, I found the following gaps -
 - **Meta Hallucination:** The model confidently claims it can assist with "cultural nuances associated with Odia" right after failing a 1st-grade level translation.This is an Alignment Issue. The model's "confidence" is not calibrated with its "competence."
 - **Script Contamination(Nagari/Bengali Interference):** When asked for Odia, it gave me: তোমার কেমন আছেন? (Bengali script) and तुम्हारी किमकम आश्वस्त? (Devanagari/Hindi script).
 Complete conversation can be found in Results/phi4_mini_hallucination_log.txt
+
+### 🚨 A drift towards Standard Odia and a complete failure to capture cultural and social nuances in Gemini 3 Flash
+**Dialectal Gain vs. Standard Language Bias:** The model achieved a Mean Relative Levenshtein Gain (RLG) of only 0.0651, indicating that while it attempts dialectal adaptation, the output remains heavily anchored to Standard Odia.
+
+**Structural vs. Surface-Level Adaptation:** There is a significant performance gap between Morphological (20% Hit Rate) and Syntactic (0% Hit Rate) categories. This proves the model can handle simple suffix changes but fails completely at the fundamental structural shifts required for Sambalpuri.
+
+**Linguistic Failure Consistency:** The 0.00 Standard Deviation in Honorifics reveals a systematic, consistent failure to capture social nuances, while the negligible correlation (0.0244) between sentence length and fidelity confirms that the model’s struggles are rooted in linguistic ignorance rather than computational complexity.
+
+### 📊 Fidelity Score Distribution
+The model shows a high concentration in the middle range (Scores 2-3), indicating a consistent struggle with dialectal precision.
+
+![Fidelity Score Distribution](./plots/Distribution_of_Dialectal_Fidelity_Scores.png)
+
+### 🔍 Lexical Differentiation: The Standard Language Bias
+My analysis quantifies "Dialectal Leakage." The orange curve shows that the AI-generated Sambalpuri output is statistically more similar to Standard Odia than to the Sambalpuri Native one (blue curve). This shows that parent language still overpowers the dialect in the output.
+
+![Lexical Differentiation KDE Plot](./plots/Lexical_Differentiation.png)
+
+### 📉 Performance by Linguistic Category
+While the model performs better on Morphological tasks (basic suffix swaps), it fails significantly in Syntactic and Cultural grounding. Many outputs just showed loss of context or crude word to word translation removing the "flavour".
+
+![Fidelity Score by Category](./plots/Fidelity_Score_by_Category.png)
+
+### 🌡️ Error Type Heatmap
+This heatmap illustrates how Lexical(LEX) and Morphological(MORPH) errors cluster across different conversational categories. More explained about it in report.
+
+![Heatmap of Error Types](./plots/Heatmap_of_Error_Types_across_Categories.png)
+
+
+For more detailes analysis, read a comprehensive report explained with plots in the Results folder (Report.pdf).
+
+### A little bit about myself 
+My name is Sumit Barik. I am a 3rd year BTech. Data Science and AI student at IIIT Naya Raipur. I am currently a Research Intern (PRISM) at Samsung R&D India. I am interested in Computer Vision and NLP. If you are too, then please don't hesitate to ping me - sumit23102@iiitnr.edu.in. Let's work together.
