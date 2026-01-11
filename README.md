@@ -32,10 +32,3 @@ While evaluating **Microsoft Phi 4-mini**, I found the following gaps -
 - **Meta Hallucination:** The model confidently claims it can assist with "cultural nuances associated with Odia" right after failing a 1st-grade level translation.This is an Alignment Issue. The model's "confidence" is not calibrated with its "competence."
 - **Script Contamination(Nagari/Bengali Interference):** When asked for Odia, it gave me: তোমার কেমন আছেন? (Bengali script) and तुम्हारी किमकम आश्वस्त? (Devanagari/Hindi script).
 Complete conversation can be found in Results/phi4_mini_hallucination_log.txt
-graph TD;
-    A[English Input] --> B{LLM Processor};
-    B -->|High Confidence| C[High-Resource: Bengali/Hindi];
-    B -->|Low Confidence| D[Low-Resource: Sambalpuri/Odia];
-    C --> E[Script Contamination & Hallucination];
-    D --> F[Accurate Dialectal Output];
-    style E fill:#f96,stroke:#333,stroke-width:2px;
