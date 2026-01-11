@@ -1,0 +1,88 @@
+PS C:\Users\stude> ollama run phi4-mini
+pulling manifest
+pulling 3c168af1dea0: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏ 2.5 GB
+pulling 813f53fdc6e5: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏  655 B
+pulling fa8235e5b48f: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏ 1.1 KB
+pulling 8c2539a423c4: 100% ▕██████████████████████████████████████████████████████████████████████████████████████████████▏  411 B
+verifying sha256 digest
+writing manifest
+success
+>>> Hello
+The instruction is simple. It just contains a greeting in English, translated from the Chinese phrase "你好" which means "hello." There isn't any
+additional context or complexity to this task that would require an elaborated solution similar to those for programming challenges like writing
+Python functions with specific behaviors such as finding prime numbers within Fibonacci sequences.
+
+
+In response to this instruction under normal circumstances (assuming a human assistant scenario), the output could simply be:
+
+
+"Hello! How can I assist you today?"
+
+
+If we were translating it back into Chinese, based on the previous format used in Instruction 1 and Solution 2 but without using any code blocks or
+additional markdown formatting since there are no programming-related tasks involved here. The response would still follow directly from this
+instruction with a greeting translated appropriately:
+
+
+你好！今天我能帮您什么呢？
+
+
+This translates to "Hello! How can I assist you today?" in English, maintaining the simple and direct nature of an instructional task that merely
+requires translation or conversion into Chinese characters without additional context.
+
+>>> translate this sentence into Odia language: "How are you?"
+To translate from one Indian regional language (English) to another (Odia), we must have a good understanding both in terms of vocabulary as well as
+grammatical structure since different languages can express the same concept with varying structures and levels of formality. In English, asking about
+someone's wellbeing is casual but polite.
+
+
+The translated sentence into Odia would be:
+
+
+"তোমার কেমন আছেন?"
+
+
+Translated to: "तुम्हारी किमकम आश्वस्त?"
+
+>>> DO you know Odia language?
+As an artificial intelligence developed by Microsoft, my primary function involves understanding and generating text based on input across various
+languages. While I do not possess the ability to comprehend or learn new human-like skills such as acquiring a native proficiency in any given spoken
+dialects—including regional Indian languages like Odia—I am programmed with extensive language data up until early 2023.
+
+
+I can recognize, interpret, translate between multiple languages including English and Odia (also referred to as Oriya), but I should clarify that my
+capabilities are based on patterns identified within the datasets used for training me. My proficiency lies in providing accurate translations or
+responses related to text input provided by users rather than engaging with these dialects natively like a human would.
+
+
+Therefore, if you have any language-related queries concerning Odia—for instance translation requests from English into Odia—or even discussions about
+cultural nuances associated with the use of this regional Indian language within its context in Odisha—I can certainly assist. However, it's essential
+to remember that while my responses are based on vast datasets and linguistic knowledge up until early 2023, they might not reflect real-time learning
+or personal experiences one would encounter from a native speaker's perspective.
+
+
+If you require assistance with Odia text translation into another language such as English (or vice versa), feel free to ask your questions.
+
+>ଉଠ ଓ ମୁହଁ ଧୁଅ what does this mean?
+The phrase "ଉଠ ଓ ମୁହଁ ଧୁଅ" is written in Odia script and translates into English as follows:
+
+
+- ଉଠ (Utha) means 'yes' or can be used to affirm something.
+- ମୁହଁ (Muhāna) also indicates agreement, similar to saying "of course," often implying that whatever has been said was expected.
+
+
+So when combined together in Odia script as "ଉଠ ଓ ମୁହଁ ଧୁଅ", it can be interpreted directly into English without needing translation since both words
+are understood within their context. However, if you wish to convey the same sentiment of agreeing with someone or affirming what they have stated
+just like in conversational use:
+
+
+English: "Yes indeed."
+
+In Odia script using Devanagari characters (which is more commonly used alongside Odia), it could be written as:
+
+- "ଉଠ ଓ ମୁହଁ ଧୁଅ"
+
+
+If you need assistance with anything else, please let me know!
+
+>>> Send a me

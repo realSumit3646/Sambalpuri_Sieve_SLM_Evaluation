@@ -25,3 +25,17 @@ During the evaluation of **Microsoft Phi-3.5**, I came across a significant **La
 - **The Issue:** The model incorrectly classified Odia as a "Bengali-Assamese" language on prompting it about Odia knowledge.
 - **The Result:** When prompted for Standard Odia or Sambalpuri, the model hallucinates translations using **Bengali script and grammar**.
 - **Impact:** This suggests a significant "representation gap" in the model's pre-training data for the Odia language family, leading to high-resource language (Bengali) interference.
+
+### 🚨 Semantic Hallucination, Meta Hallucination and Script Contamination in Phi 4
+While evaluating **Microsoft Phi 4-mini**, I found the following gaps - 
+- **Semantic Hallucination:** I asked the meaning of ଉଠ ଓ ମୁହଁ ଧୁଅ (Wake up and wash your face). The model replied - ଉଠ means "Yes" and ମୁହଁ means "Agreement.". This is a Total Semantic Failure. The model recognizes the script but has lost the mapping to the actual Odia dictionary. It is making guesses based on common conversation patterns (like affirmation) rather than translation.
+- **Meta Hallucination:** The model confidently claims it can assist with "cultural nuances associated with Odia" right after failing a 1st-grade level translation.This is an Alignment Issue. The model's "confidence" is not calibrated with its "competence."
+- **Script Contamination(Nagari/Bengali Interference):** When asked for Odia, it gave me: তোমার কেমন আছেন? (Bengali script) and तुम्हारी किमकम आश्वस्त? (Devanagari/Hindi script).
+Complete conversation can be found in Results/phi4_mini_hallucination_log.txt
+graph TD;
+    A[English Input] --> B{LLM Processor};
+    B -->|High Confidence| C[High-Resource: Bengali/Hindi];
+    B -->|Low Confidence| D[Low-Resource: Sambalpuri/Odia];
+    C --> E[Script Contamination & Hallucination];
+    D --> F[Accurate Dialectal Output];
+    style E fill:#f96,stroke:#333,stroke-width:2px;
